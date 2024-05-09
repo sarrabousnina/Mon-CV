@@ -1,0 +1,174 @@
+body {
+    background-image: url("C:/Users/user/Documents/Mini Projet/wallp2.png");
+    background-size: cover; 
+    background-position: center; 
+   
+}
+a {
+    text-decoration: none;
+  }
+
+.styledetexte{color: #4204d3;text-shadow: -6px 3px 4px rgba(101, 4, 211, 0.67);}
+
+.styledetexte1{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 17px;
+    word-spacing: 0.4px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+    color: rgb(85, 84, 84); 
+    text-shadow: -1px 0px 1px rgba(85,84,84,0.91);
+
+    } 
+    
+ .styledetexte2{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    word-spacing: 1.8px;
+    color: rgb(151, 87, 151);
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: -7px 3px 4px rgba(151,87,151,0.91);
+
+    }
+.styledetexte3{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  word-spacing: 0.6px;
+  color: #000000;
+  font-weight: 400;
+  text-shadow: -1px 1px 1px #000000;}
+  .styledetexte4{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    word-spacing: 0.6px;
+    color: #ff0000;
+    font-weight: 400;
+    text-shadow: 0px 1px 0px #eb0000;}
+
+    .styledetexte5{
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 18px;
+      letter-spacing: 0.6px;
+      word-spacing: 0.6px;
+      color: #000000;
+      font-weight: 400;
+      text-shadow: 0px 1px 0px #464343;}
+
+.monimage{ 
+    box-shadow: 5px 5px 13px 6px rgba(188,118,100,0.87);}
+
+.lesimages{
+    box-shadow: 5px 1px 11px 1px rgba(4,3,122,0.66);}
+
+a:link {
+        color: red;
+
+      }
+      
+a:visited {
+        color: #ff008c;
+      }
+
+a:hover {
+        color:rgba(180,4,211,0.67); font-size: 25px;
+      }
+
+a:active {
+        color: #0000FF;
+      }
+a:focus {
+        color: #0000FF;
+      }
+
+
+
+
+      .fade-in {
+        opacity: 0; /*Commencez avec une opacite de 0 */ 
+        animation: fadeIn 1.5s linear;
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+
+
+      .bounce {
+        animation: bounce 1.5s ease-in-out 1; /* Nom de l'animation, durée, fonction de temporisation, et répétition une fois */
+      }
+      
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0); /* À ces points clés, l'élément est à sa position normale */
+        }
+        40% {
+          transform: translateY(-20px); /* À ce point, l'élément est déplacé vers le haut */
+        }
+        60% {
+          transform: translateY(-15px); /* À ce point, l'élément est déplacé vers le haut mais moins que la première fois */
+        }
+      }
+      
+
+
+  
+
+/*button */ 
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  button{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  button span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  button:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+  }
+  
+  button:hover{
+    color: #fff;
+  }
+  
+  button:hover:after{
+    width: 100%;
+  }
